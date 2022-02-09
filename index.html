@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/2d4ff18472.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1 id="montitre" class="colorElement">TRON</h1>
+    <div id="contenu">
+        <canvas id="myCanvas" width="720" height="480"></canvas>
+        <p><input type="button" id="monbouton" value="Démmarer "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" id="ouvert" name="choice" value="ouvert">
+            <label for="ouvert" id="ouvertStyle"><span> Mode sans bordures</span></label></p>
+    </div>
+
+    <div id="boutonVitesse">
+        <label class="vitesse"><input type="radio" name="speed" class="inputSpeed" id="speed1" value="vitesse1"><span>Vitesse Min</span></label>
+        <label class="vitesse"><input type="radio" name="speed" class="inputSpeed" id="speed2" value="vitesse2"><span>Vitesse Moy</span></label>
+        <label class="vitesse"><input type="radio" name="speed" class="inputSpeed" id="speed3" value="vitesse3"><span>Vitesse Max</span></label>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

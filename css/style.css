@@ -1,0 +1,172 @@
+/* Mise en place du Background */
+
+body {
+    background-image: url(../img/86334.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+
+/* Positionnement du bouton "Démmarer"*/
+
+body #boutonVitesse {
+    display: flex;
+}
+
+
+/*Style du canvas*/
+
+canvas {
+    border: 1px solid black;
+    background-image: url(../img/491120.png);
+    background-size: cover;
+}
+
+
+/* style du titre */
+
+#montitre {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5em;
+    background: linear-gradient(120deg, rgba(65, 119, 194, 1) 13%, rgba(210, 213, 66, 1) 33%, rgba(65, 119, 194, 1) 65%, rgba(210, 213, 66, 1) 86%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Style du bouton "démmarer" */
+
+#monbouton {
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+/* Style des boutons choix de vitesse-------------------------------------- */
+
+body,
+.inputSpeed {
+    color: var(--fg);
+    font: 1em/1.5 Helvetica, sans-serif;
+}
+
+#boutonVitesse,
+.vitesse {
+    width: 50%;
+}
+
+#boutonVitesse {
+    margin: auto;
+    max-width: 24em;
+    padding: 0 1.5em;
+    color: white;
+    font-size: x-large;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.vitesse {
+    display: block;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.vitesse:first-child .inputSpeed {
+    border-radius: 0.5em 0 0 0.5em;
+    box-shadow: 0.1em 0 0 #2726267f inset, -0.1em 0 0 #27262600 inset, 0 0.1em 0 #afa490 inset, 0 -0.1em 0 #ffffff3f, 0 0.2em 0.5em #0000007f, 0 -0.1em 0 #926086 inset, -0.1em -0.2em 0 #ffffff7f inset, 0.2em 0 0 #ffffff7f inset;
+}
+
+.vitesse:last-child .inputSpeed {
+    border-radius: 0 0.5em 0.5em 0;
+    box-shadow: 0 -0.1em 0 #926086 inset, 0.1em 0 0 #2726267f inset, -0.1em 0 0 #2726267f inset, 0 0.1em 0 #afa490 inset, -0.1em 0 0 #afa490 inset, 0 -0.1em 0 #ffffff3f, 0 0.2em 0.5em #0000007f, -0.1em -0.1em 0 0.1em #ffffff7f inset;
+}
+
+.vitesse:first-child .inputSpeed:checked {
+    box-shadow: 0.1em 0 0 #272626af inset, -0.1em 0 0 #272626 inset, 0 0.1em 0 #847a62 inset, 0 -0.1em 0 #ffffff3f, 0 0.1em 0 #ffffff7f, 0 -0.1em 0 #722257 inset, -0.1em -0.2em 0 #ffffff7f inset, 0.2em 0 0 #ffffff7f inset;
+}
+
+.vitesse:last-child .inputSpeed:checked {
+    box-shadow: 0.1em 0 0 #272626af inset, -0.1em 0 0 #272626 inset, 0 -0.1em 0 #722257 inset, 0 0.1em 0 #847a62 inset, -0.1em 0 0 #847a62 inset, 0 -0.1em 0 #ffffff3f, 0 0.1em 0 #ffffff7f, -0.1em -0.1em 0 0.1em #ffffff7f inset;
+}
+
+.inputSpeed {
+    background-image: linear-gradient(#ffffff 33%, #414751 58%, #837b52, #c5baa1, #c3adaa);
+    border-radius: 0;
+    box-shadow: 0.1em 0 0 #2726267f inset, -0.1em 0 0 #27262600 inset, 0 0.1em 0 #afa490 inset, 0 -0.1em 0 #ffffff3f, 0 0.2em 0.5em #0000007f, 0 -0.1em 0 #926086 inset, -0.1em -0.2em 0 #ffffff7f inset;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 0.5em;
+    width: 100%;
+    height: 1em;
+    transition: box-shadow var(--transDur) ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.inputSpeed:checked {
+    background-image: linear-gradient(#ffffff 33%, #414751 58%, #827a7b, #c0b6ac, #c3adaa);
+    box-shadow: 0.1em 0 0 #272626af inset, -0.1em 0 0 #272626 inset, 0 0.1em 0 #847a62 inset, 0 -0.1em 0 #ffffff3f, 0 0.1em 0 #ffffff7f, 0 -0.1em 0 #722257 inset, -0.1em -0.2em 0 #ffffff7f inset;
+}
+
+.inputSpeed:checked+span {
+    color: red;
+    opacity: 1;
+}
+
+.inputSpeed:focus {
+    outline: transparent;
+}
+
+.inputSpeed+span {
+    opacity: 0.65;
+    transition: opacity var(--transDur) ease-in-out;
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --bg: #5c6270;
+        --fg: #e3e4e8;
+    }
+    .vitesse:first-child .inputSpeed {
+        box-shadow: 0.1em 0 0 #2726267f inset, -0.1em 0 0 #27262600 inset, 0 0.1em 0 #afa490 inset, 0 -0.1em 0 #0000001f, 0 0.2em 0.5em #0000007f, 0 -0.1em 0 #926086 inset, -0.1em -0.2em 0 #ffffff7f inset, 0.2em 0 0 #ffffff7f inset;
+    }
+    .vitesse:last-child .inputSpeed {
+        box-shadow: 0 -0.1em 0 #926086 inset, 0.1em 0 0 #2726267f inset, -0.1em 0 0 #2726267f inset, 0 0.1em 0 #afa490 inset, -0.1em 0 0 #afa490 inset, 0 -0.1em 0 #0000001f, 0 0.2em 0.5em #0000007f, -0.1em -0.1em 0 0.1em #ffffff7f inset;
+    }
+    .vitesse:first-child .inputSpeed:checked {
+        box-shadow: 0.1em 0 0 #272626af inset, -0.1em 0 0 #272626 inset, 0 0.1em 0 #847a62 inset, 0 -0.1em 0 #0000007f, 0 0.1em 0 #0000007f, 0 -0.1em 0 #722257 inset, -0.1em -0.2em 0 #ffffff7f inset, 0.2em 0 0 #ffffff7f inset
+    }
+    .vitesse:last-child .inputSpeed:checked {
+        box-shadow: 0.1em 0 0 #272626af inset, -0.1em 0 0 #272626 inset, 0 -0.1em 0 #722257 inset, 0 0.1em 0 #847a62 inset, -0.1em 0 0 #847a62 inset, 0 -0.1em 0 #0000001f, 0 0.1em 0 #0000007f, -0.1em -0.1em 0 0.1em #ffffff7f inset;
+    }
+    .inputSpeed {
+        box-shadow: 0.1em 0 0 #2726267f inset, -0.1em 0 0 #27262600 inset, 0 0.1em 0 #afa490 inset, 0 -0.1em 0 #0000001f, 0 0.2em 0.5em #0000007f, 0 -0.1em 0 #926086 inset, -0.1em -0.2em 0 #ffffff7f inset;
+    }
+    .inputSpeed:checked {
+        box-shadow: 0.1em 0 0 #272626af inset, -0.1em 0 0 #272626af inset, 0 0.1em 0 #847a62 inset, 0 -0.1em 0 #0000007f, 0 0.1em 0 #0000007f, 0 -0.1em 0 #722257 inset, -0.1em -0.2em 0 #ffffff7f inset;
+    }
+}
+
+
+/* --------------------------------------------------------------------- */
+
+
+/*Style du mode OPEN */
+
+input[type=checkbox]+label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    color: white;
+}
+
+input[type=checkbox]:checked+label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    color: red;
+}
